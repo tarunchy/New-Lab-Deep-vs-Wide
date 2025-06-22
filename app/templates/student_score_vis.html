@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Answer Visualization</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- FontAwesome for icons (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="icon" href="https://www.gatech.edu/themes/custom/gatech/images/gatech-color_logo.png" type="image/png">
+</head>
+<body class="bg-gray-50 min-h-screen font-sans">
+  <!-- GT Header -->
+  <header class="bg-white shadow-md flex items-center px-4 py-2 mb-6">
+    <img src="https://www.gatech.edu/themes/custom/gatech/images/gatech-color_logo.png" alt="Georgia Tech Logo" class="h-10 mr-4">
+    <h1 class="text-2xl font-bold text-gold-800 flex-1">Student vs. Gold/Wide/RAG/CLEAR Answers</h1>
+    <a href="{{ url_for('main.index') }}">
+      <button class="ml-auto rounded-xl px-5 py-2 bg-blue-100 text-blue-900 font-bold shadow hover:bg-blue-200 transition">
+        <i class="fas fa-arrow-left mr-2"></i>Back to Portal
+      </button>
+    </a>
+  </header>
+
+  <main class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6">
+    <div class="mb-6 text-gray-800 text-lg flex items-center">
+      <i class="fas fa-chart-line text-blue-600 mr-2"></i>
+      Automated scoring comparison across approaches for each test case.
+    </div>
+    <div id="chartStatus" class="my-8 text-xl text-gray-500 flex items-center justify-center">
+      <i class="fas fa-spinner fa-spin mr-2"></i> Generating chart, please wait...
+    </div>
+    <div class="flex justify-center">
+      <canvas id="scoreChart" width="1000" height="400" class="rounded-xl shadow-lg border border-gray-200 bg-gray-50 p-2" style="display:none"></canvas>
+    </div>
+  </main>
+
+  <script>
+    fetch("{{ url_for('main.student_score_json') }}")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('chartStatus').style.display = "none";
+        document.getElementById('scoreChart').style.display = "";
+        const labels = data.map(x => x.case);
+        const studentData = data.map(x => x.student);
+        const wideData = data.map(x => x.wide);
+        const ragData = data.map(x => x.rag);
+        const clearData = data.map(x => x.clear);
+
+        new Chart(document.getElementById('scoreChart'), {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [
+              { label: "Student", data: studentData, borderColor: "#2196f3", fill: false, tension: 0.2 },
+              { label: "Wide",    data: wideData,    borderColor: "#4caf50", fill: false, tension: 0.2 },
+              { label: "RAG",     data: ragData,     borderColor: "#ff9800", fill: false, tension: 0.2 },
+              { label: "CLEAR",   data: clearData,   borderColor: "#e91e63", fill: false, tension: 0.2 }
+            ]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: {
+                  font: { size: 15 }
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                max: 1,
+                title: { display: true, text: 'Score' }
+              },
+              x: {
+                title: { display: true, text: 'Case' }
+              }
+            }
+          }
+        });
+      })
+      .catch(() => {
+        document.getElementById('chartStatus').innerHTML = "<span class='text-red-600'><i class='fas fa-exclamation-triangle mr-2'></i>Failed to load chart data.</span>";
+      });
+  </script>
+</body>
+</html>

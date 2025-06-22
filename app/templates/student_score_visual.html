@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Answer Scoring for {{ run_name }}</title>
+    <style>
+      table { border-collapse: collapse; width: 100%; }
+      th, td { border: 1px solid #bbb; padding: 6px 8px; }
+      th { background: #eaeaea; }
+      .ok { background: #c6ffd6; }
+      .low { background: #ffe6e6; }
+    </style>
+</head>
+<body>
+    <h2>📝 Student Answer Results: {{ run_name }}</h2>
+    <a href="{{ url_for('main.index') }}"><button>⬅️ Back to Portal</button></a>
+
+    <!-- Student score trend plot -->
+    <h3>📈 Student Score Trend</h3>
+    {% if student_score_img_exists %}
+        <img src="{{ url_for('main.run_img', run_name=run_name, filename='student_score_trend.png') }}" alt="Student Score Trend">
+    {% else %}
+        <p style="color:#c00;">No student answers submitted or scored yet.</p>
+    {% endif %}
+
+    <table>
+        <tr>
+            <th>Note</th>
+            <th>Cosine Similarity</th>
+            <th>ROUGE-L F1</th>
+            <th>Student Answer</th>
+            <th>Gold Standard</th>
+        </tr>
+        {% for r in results %}
+        <tr>
+            <td>{{ r.case }}</td>
+            <td class="{{ 'ok' if r.cosine is not none and r.cosine > 0.75 else 'low' }}">
+                {{ "%.3f"|format(r.cosine) if r.cosine is not none else "-" }}
+            </td>
+            <td class="{{ 'ok' if r.rougeL_f1 is not none and r.rougeL_f1 > 0.5 else 'low' }}">
+                {{ "%.3f"|format(r.rougeL_f1) if r.rougeL_f1 is not none else "-" }}
+            </td>
+            <td><pre>{{ r.student_answer }}</pre></td>
+            <td><pre>{{ r.gold_answer }}</pre></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

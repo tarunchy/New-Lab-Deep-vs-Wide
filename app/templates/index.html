@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab: Deep vs Wide — Clinical Note Review Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="https://www.gatech.edu/themes/custom/gatech/images/gatech-color_logo.png" type="image/png">
+  <style>
+    /* Modal styles not covered by Tailwind */
+    #noteModal, #helpModal, #finalModal {
+      backdrop-filter: blur(2px);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans min-h-screen">
+  <!-- GT Branding Header -->
+  <header class="bg-white shadow-md flex items-center px-4 py-2">
+    <img src="https://www.gatech.edu/themes/custom/gatech/images/gatech-color_logo.png" alt="Georgia Tech Logo" class="h-10 mr-4">
+    <h1 class="text-2xl font-bold text-gold-800 flex-1"> Introduction to Health Informatics</h1>
+    
+    <button id="helpBtn" class="ml-auto text-blue-700 hover:text-blue-900 text-2xl" title="Help / Tutorial">
+      <i class="fas fa-circle-question"></i>
+    </button>
+  </header>
+
+  <!-- Overview Section -->
+  <section class="max-w-3xl mx-auto mt-6 bg-white rounded-2xl shadow-lg p-6 mb-6">
+    <h2 class="text-xl font-semibold mb-3 text-gray-800 flex items-center">
+      <i class="fas fa-book-open mr-2 text-blue-600"></i>
+      Overview: Wide vs Deep Context in Medical NLP
+    </h2>
+    <p class="mb-3">
+      <span class="font-bold">Wide Context Strategy:</span> Uses LLMs with large context windows (e.g., GPT-4 32K, Claude 100K) to process entire documents in one go. Useful for seeing all information, but can be inefficient, costly, and sometimes less accurate due to “lost in the middle” effects and information overload.
+    </p>
+    <p class="mb-3">
+      <span class="font-bold">Deep Context Strategy:</span> Breaks the document into smaller chunks (using retrieval or iterative summarization). Relevant snippets are selected and passed to the LLM, improving focus, efficiency, and often accuracy. Recent research (e.g., the <b>CLEAR</b> paper) shows deep context/retrieval approaches often outperform wide context, especially for long and complex clinical notes.
+    </p>
+    <p class="mb-2">
+      <span class="font-semibold text-blue-800">Lab Activity:</span> You will experiment with both approaches on synthetic clinical notes, comparing answer quality, efficiency, and token usage. For file upload and LLM access, use the <a href="https://m365.cloud.microsoft/chat" target="_blank" class="underline text-blue-700 font-semibold">M365 Cloud Microsoft Chat</a> (login with your <span class="font-mono bg-yellow-100 px-1 rounded">GT</span> account).
+    </p>
+    <ul class="text-sm text-gray-700 mb-2">
+      <li><i class="fas fa-info-circle text-blue-600"></i> <b>Wide</b>: good for global connections, but costly and less robust with long/irrelevant text.</li>
+      <li><i class="fas fa-info-circle text-blue-600"></i> <b>Deep (Retrieval/RAG)</b>: efficient, accurate, and recommended for long clinical notes.</li>
+    </ul>
+    <button onclick="openHelpModalToReferences()" class="text-blue-600 underline font-medium">See key research papers below</button>
+  </section>
+
+  <!-- Main Controls -->
+  <section class="max-w-3xl mx-auto flex flex-wrap gap-4 justify-center items-center mb-4">
+    <a href="{{ url_for('main.run_visuals', run_name='run1') }}">
+      <button class="rounded-2xl px-6 py-2 bg-blue-100 text-blue-900 font-bold shadow hover:bg-blue-200 transition"><i class="fas fa-image mr-2"></i>View Run1 Visuals</button>
+    </a>
+    <a href="{{ url_for('main.clean_all_student_answers') }}">
+      <button class="rounded-2xl px-6 py-2 bg-red-100 text-red-700 font-bold shadow hover:bg-red-200 transition"><i class="fas fa-broom mr-2"></i>Clean All Student Answers</button>
+    </a>
+    <a href="{{ url_for('main.student_score_plot') }}">
+      <button class="rounded-2xl px-6 py-2 bg-green-100 text-green-700 font-bold shadow hover:bg-green-200 transition"><i class="fas fa-check mr-2"></i>Visualize Student Answers</button>
+    </a>
+    <button id="downloadFinalBtn" class="rounded-2xl px-6 py-2 bg-blue-200 text-blue-900 font-bold shadow hover:bg-blue-300 transition"><i class="fas fa-download mr-2"></i>Download Final Submission (JSON)</button>
+  </section>
+
+  <!-- Status Modal for download -->
+  <div id="finalModal" class="fixed inset-0 z-40 flex items-center justify-center bg-black bg-opacity-60 hidden">
+    <div class="bg-white rounded-2xl p-8 shadow-lg w-[90vw] max-w-md text-center relative">
+      <span id="finalModalClose" class="absolute top-3 right-5 text-gray-400 text-2xl cursor-pointer">&times;</span>
+      <div id="finalModalSpinner" class="text-3xl mb-4">⏳</div>
+      <div id="finalModalMsg" class="mb-6 text-gray-700">Checking student submission status…</div>
+      <button id="finalDownloadBtn" class="hidden mt-4 rounded-xl bg-blue-200 text-blue-900 font-bold py-2 px-6 shadow hover:bg-blue-300 transition">Download Now</button>
+    </div>
+  </div>
+
+  <!-- Note List -->
+  <main class="max-w-3xl mx-auto bg-white rounded-2xl shadow p-6 mb-10">
+    <h2 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+      <i class="fas fa-flask-vial text-green-600 mr-2"></i>
+      Clinical Note Review Assignment
+    </h2>
+    <p class="mb-2 text-gray-700">Workflow steps:</p>
+    <ol class="list-decimal list-inside mb-5 text-gray-700">
+      <li>Download the clinical note</li>
+      <li>Go to <a href="https://m365.cloud.microsoft/chat" target="_blank" class="underline text-blue-700 font-semibold">M365 Cloud Microsoft Chat</a> and sign in with your <span class="font-mono bg-yellow-100 px-1 rounded">GT Login</span></li>
+      <li>Upload the clinical note, paste the question</li>
+      <li>Copy the answer from the model and submit it below</li>
+    </ol>
+
+    {% for note in notes %}
+      <hr class="my-5">
+      <div class="mb-4">
+        <h3 class="text-lg font-bold text-gray-800 mb-1">{{ note.name }}</h3>
+        <div class="mb-2">
+          <span class="font-semibold text-gray-700">Question:</span>
+          <pre class="bg-gray-100 rounded p-2 my-1 text-sm font-mono whitespace-pre-wrap break-words">{{ (note / "question.txt").read_text() }}</pre>
+        </div>
+        <div class="flex gap-3 mb-2 flex-wrap">
+          <a href="{{ url_for('main.download_note', note_id=note.name) }}">
+            <button class="rounded-lg px-3 py-1 bg-blue-100 text-blue-700 shadow hover:bg-blue-200 transition"><i class="fas fa-download"></i> Download clinical_note.txt</button>
+          </a>
+          <button type="button" onclick="openNoteModal('{{ note.name }}')" class="rounded-lg px-3 py-1 bg-yellow-100 text-yellow-900 shadow hover:bg-yellow-200 transition"><i class="fas fa-eye"></i> View Note</button>
+          <!--a href="{{ url_for('main.clone_student_answer', note_id=note.name) }}">
+            <button class="rounded-lg px-3 py-1 bg-cyan-100 text-cyan-900 shadow hover:bg-cyan-200 transition"><i class="fas fa-clone"></i> Clone This Answer To Remaining Notes</button>
+          </a-->
+        </div>
+        <form method="post" action="{{ url_for('main.submit', note_id=note.name) }}">
+          <input type="hidden" name="run_name" value="run1">
+          <textarea name="student_answer" rows="6" cols="100" placeholder="Paste your answer here" class="w-full border rounded-lg p-2 mt-1 mb-2 bg-gray-50 text-sm font-mono">{{ answers[note.name] }}</textarea><br>
+          <button type="submit" class="rounded-lg px-4 py-1 bg-green-200 text-green-900 font-bold shadow hover:bg-green-300 transition"><i class="fas fa-save"></i> Save Answer</button>
+        </form>
+      </div>
+    {% endfor %}
+  </main>
+
+  <!-- NOTE Modal -->
+  <div id="noteModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 hidden">
+    <div class="relative bg-white rounded-2xl shadow-lg p-6 w-[90vw] max-w-2xl max-h-[80vh] overflow-y-auto">
+      <span id="noteModalClose" class="absolute top-2 right-4 text-2xl text-gray-400 hover:text-gray-800 cursor-pointer">&times;</span>
+      <div id="noteText" class="whitespace-pre-wrap font-mono text-sm text-gray-800">Loading...</div>
+    </div>
+  </div>
+
+  <!-- HELP Modal / Tutorial -->
+  <div id="helpModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 hidden">
+    <div class="bg-white rounded-2xl shadow-2xl p-8 w-[90vw] max-w-2xl relative">
+      <span id="helpModalClose" class="absolute top-3 right-5 text-2xl text-gray-400 hover:text-gray-800 cursor-pointer">&times;</span>
+      <h2 class="text-xl font-bold text-blue-800 mb-2 flex items-center"><i class="fas fa-circle-info mr-2"></i>Wide vs Deep: Tutorial & Research Context</h2>
+      <div class="mb-3 text-gray-800 space-y-2 text-base">
+        <p>
+          <span class="font-bold">Wide Context:</span> Inputting the whole document (or most of it) into an LLM at once (e.g., GPT-4 32K/Claude 100K). Fast and simple, but may lose important details ("lost in the middle"), suffer higher cost, and decreased accuracy with very long or noisy inputs.
+        </p>
+        <p>
+          <span class="font-bold">Deep Context (Retrieval/RAG):</span> Chunks the document and retrieves only the most relevant snippets for the question, passing them to the LLM. This often results in better accuracy, fewer hallucinations, much lower cost, and faster inference, especially for long/complex notes.
+        </p>
+        <ul class="list-disc list-inside text-gray-700 mb-3">
+          <li><b>CLEAR study (Chen et al. 2024):</b> RAG-based approach outperformed wide-context LLMs (F1: 0.90 vs 0.79), used 70% fewer tokens/calls, and was up to 4x faster. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11743751/" target="_blank" class="underline text-blue-700">Read CLEAR</a></li>
+          <li><b>Lost-in-the-middle effect:</b> Models focus more on beginning/end of long context, sometimes missing key facts buried in the middle. See <a href="https://www.nature.com/articles/s41746-025-01651-w" target="_blank" class="underline text-blue-700">npj Digital Medicine 2024</a></li>
+          <li><b>Practical tip:</b> Use wide context for tasks needing global synthesis, but prefer deep (retrieval/summarization) for efficiency and accuracy on long medical notes.</li>
+        </ul>
+        <div class="text-sm text-gray-600">
+          <b>For this lab, always:</b>
+          <ul class="list-inside list-decimal ml-4">
+            <li>Generate a synthetic medical note or download the given one.</li>
+            <li>Upload it and the question to <a href="https://m365.cloud.microsoft/chat" target="_blank" class="underline text-blue-700">M365 Cloud Microsoft Chat</a> (GT Login required).</li>
+            <li>Copy/paste the model’s answer back into the portal.</li>
+            <li>Compare how the answer changes using all vs relevant-chunk context!</li>
+          </ul>
+        </div>
+        <div id="references" class="mt-4">
+          <h3 class="font-semibold text-base text-blue-800 mb-2 flex items-center"><i class="fas fa-book mr-2"></i>Research & Further Reading:</h3>
+          <ul class="list-disc ml-5 text-sm">
+            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11743751/" target="_blank" class="underline text-blue-700">CLEAR: Clinical Entity Augmented Retrieval for Clinical Information Extraction (Chen et al. 2024)</a></li>
+            <li><a href="https://www.nature.com/articles/s41746-025-01651-w" target="_blank" class="underline text-blue-700">Lost-in-the-middle and RAG in medical QA (npj Digital Medicine 2024)</a></li>
+            <li><a href="https://www.nature.com/articles/s41746-025-01536-y" target="_blank" class="underline text-blue-700">Base vs RAG LLMs for Neurology (Masanneck et al. 2025)</a></li>
+            <li><a href="https://www.snowflake.com/en/engineering-blog/impact-retrieval-chunking-finance-rag/" target="_blank" class="underline text-blue-700">Impact of Retrieval & Chunking in Long-Context LLMs (Snowflake Blog)</a></li>
+            <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11368037/" target="_blank" class="underline text-blue-700">Evidence Retrieval from EHRs with LLMs (NLM)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS for Modal and Download Logic -->
+  <script>
+    // Help modal logic
+    const helpBtn = document.getElementById('helpBtn');
+    const helpModal = document.getElementById('helpModal');
+    const helpModalClose = document.getElementById('helpModalClose');
+    helpBtn.onclick = () => helpModal.classList.remove('hidden');
+    helpModalClose.onclick = () => helpModal.classList.add('hidden');
+    window.addEventListener('keydown', (e) => {
+      if (e.key === "Escape") helpModal.classList.add('hidden');
+    });
+
+    // Note Modal logic
+    function openNoteModal(noteId) {
+      fetch(`/view_note/${noteId}`)
+        .then(response => response.text())
+        .then(text => {
+          document.getElementById('noteText').textContent = text;
+          document.getElementById('noteModal').classList.remove('hidden');
+        })
+        .catch(err => {
+          document.getElementById('noteText').textContent = 'Error loading note.';
+          document.getElementById('noteModal').classList.remove('hidden');
+        });
+    }
+    document.getElementById('noteModalClose').onclick = function() {
+      document.getElementById('noteModal').classList.add('hidden');
+    };
+
+    // Final download modal logic (kept from original)
+    const finalBtn = document.getElementById('downloadFinalBtn');
+    const modal = document.getElementById('finalModal');
+    const closeBtn = document.getElementById('finalModalClose');
+    const modalMsg = document.getElementById('finalModalMsg');
+    const spinner = document.getElementById('finalModalSpinner');
+    const downloadBtn = document.getElementById('finalDownloadBtn');
+    function openModal() {
+      modal.classList.remove('hidden');
+      spinner.style.display = "";
+      spinner.textContent = "⏳";
+      downloadBtn.classList.add("hidden");
+      modalMsg.innerHTML = "Checking student submission status…";
+    }
+    function closeModal() { modal.classList.add('hidden'); }
+    closeBtn.onclick = closeModal;
+    window.onclick = function(e) { if (e.target === modal) closeModal(); }
+
+    finalBtn.onclick = function() {
+  openModal();
+  fetch("/final_submission_status").then(r => r.json()).then(data => {
+    if (data.missing.length === 0) {
+      spinner.style.display = "none";
+      modalMsg.innerHTML = "<span class='text-green-700 font-bold'>All notes submitted!</span><br>Ready to download your submission.";
+      downloadBtn.classList.remove("hidden"); // Show button
+      downloadBtn.disabled = false;
+      downloadBtn.textContent = "Download Now";
+      downloadBtn.onclick = function() {
+        spinner.style.display = "";
+        spinner.textContent = "⏳";
+        downloadBtn.classList.add("hidden"); // Hide button
+        modalMsg.innerHTML = "Preparing file, please wait…";
+        fetch("/download_final_submission")
+          .then(resp => resp.blob())
+          .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = "student_final_submission.json";
+            document.body.appendChild(a);
+            a.click();
+            setTimeout(() => {
+              window.URL.revokeObjectURL(url);
+              document.body.removeChild(a);
+              closeModal();
+            }, 400);
+          })
+          .catch(() => {
+            spinner.style.display = "none";
+            modalMsg.innerHTML = "<span class='text-red-700'>Error preparing file. Please try again.</span>";
+          });
+      }
+    } else {
+      spinner.style.display = "none";
+      modalMsg.innerHTML = "<span class='text-red-700 font-bold'>Missing answers for:</span><br>" +
+        data.missing.map(m => `<span class='text-red-700'>${m}</span>`).join(", ");
+      downloadBtn.classList.add("hidden"); // Hide button
+    }
+  }).catch(() => {
+    spinner.style.display = "none";
+    modalMsg.innerHTML = "<span class='text-red-700'>Error checking submission status.</span>";
+  });
+}
+
+
+  function openHelpModalToReferences() {
+    helpModal.classList.remove('hidden');
+    setTimeout(() => {
+      const ref = document.getElementById('references');
+      if (ref) {
+        ref.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 50); // delay to ensure modal is visible
+  }
+
+
+
+  </script>
+</body>
+</html>

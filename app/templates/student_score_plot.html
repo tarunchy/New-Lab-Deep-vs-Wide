@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>📈 Student Submission Trend</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- FontAwesome for icons (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="icon" href="https://www.gatech.edu/themes/custom/gatech/images/gatech-color_logo.png" type="image/png">
+</head>
+<body class="bg-gray-50 min-h-screen font-sans">
+  <!-- GT Header -->
+  <header class="bg-white shadow-md flex items-center px-4 py-2 mb-6">
+    <img src="https://www.gatech.edu/themes/custom/gatech/images/gatech-color_logo.png" alt="Georgia Tech Logo" class="h-10 mr-4">
+    <h1 class="text-2xl font-bold text-gold-800 flex-1">📈 Student Submission Trend vs Model Answers</h1>
+    <a href="{{ url_for('main.index') }}">
+      <button class="ml-auto rounded-xl px-5 py-2 bg-blue-100 text-blue-900 font-bold shadow hover:bg-blue-200 transition">
+        <i class="fas fa-arrow-left mr-2"></i>Back to Portal
+      </button>
+    </a>
+  </header>
+  <main class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-6">
+    <div class="mb-6 text-gray-800 text-lg flex items-center">
+      <i class="fas fa-chart-area text-green-700 mr-2"></i>
+      Trend of Student Submissions vs. Model (Wide, RAG, CLEAR) answers for each case.
+    </div>
+    <div class="flex justify-center">
+      <canvas id="chart" width="1000" height="480" class="rounded-xl shadow-lg border border-gray-200 bg-gray-50 p-2"></canvas>
+    </div>
+  </main>
+  <script>
+    async function drawChart() {
+      const resp = await fetch("/student_score_json");
+      const data = await resp.json();
+
+      const labels = data.map(r => r.case);
+      const student = data.map(r => r.student);
+      const wide = data.map(r => r.wide);
+      const rag = data.map(r => r.rag);
+      const clear = data.map(r => r.clear);
+
+      const datasets = [
+        {
+          label: 'Student',
+          data: student,
+          borderColor: "#16a34a",
+          backgroundColor: "#bbf7d0",
+          pointRadius: 6,
+          tension: 0.25,
+        },
+        {
+          label: 'Wide',
+          data: wide,
+          borderColor: "#0ea5e9",
+          backgroundColor: "#bae6fd",
+          pointRadius: 4,
+          tension: 0.25,
+        },
+        {
+          label: 'RAG',
+          data: rag,
+          borderColor: "#f59e42",
+          backgroundColor: "#fde68a",
+          pointRadius: 4,
+          tension: 0.25,
+        },
+        {
+          label: 'CLEAR',
+          data: clear,
+          borderColor: "#7c3aed",
+          backgroundColor: "#ddd6fe",
+          pointRadius: 4,
+          tension: 0.25,
+        },
+      ];
+
+      new Chart(document.getElementById('chart'), {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: datasets,
+        },
+        options: {
+          plugins: {
+            title: { display: true, text: 'Cosine Similarity per Case', font: { size: 18 } },
+            legend: { position: 'bottom' }
+          },
+          scales: {
+            y: {
+              min: 0, max: 1,
+              title: { display: true, text: 'Cosine Similarity Score' }
+            },
+            x: {
+              title: { display: true, text: 'Case' }
+            }
+          },
+          responsive: false,
+        }
+      });
+    }
+    drawChart();
+  </script>
+</body>
+</html>

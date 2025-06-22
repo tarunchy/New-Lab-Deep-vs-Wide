@@ -1,0 +1,82 @@
+{
+  "clinical_note1": {
+    "strategy": "Wide",
+    "score": 0.43049201369285583,
+    "tokens": 66416
+  },
+  "clinical_note2": {
+    "strategy": "CLEAR",
+    "score": 0.5301762819290161,
+    "tokens": 66921
+  },
+  "clinical_note3": {
+    "strategy": "RAG",
+    "score": 0.5614603757858276,
+    "tokens": 27655
+  },
+  "clinical_note4": {
+    "strategy": "RAG",
+    "score": 0.5542623996734619,
+    "tokens": 25510
+  },
+  "clinical_note5": {
+    "strategy": "RAG",
+    "score": 0.592143177986145,
+    "tokens": 25494
+  },
+  "clinical_note6": {
+    "strategy": "RAG",
+    "score": 0.539574921131134,
+    "tokens": 25192
+  },
+  "clinical_note7": {
+    "strategy": "Wide",
+    "score": 0.6075936555862427,
+    "tokens": 40191
+  },
+  "clinical_note8": {
+    "strategy": "Wide",
+    "score": 0.5055950880050659,
+    "tokens": 40382
+  },
+  "clinical_note9": {
+    "strategy": "RAG",
+    "score": 0.5971168875694275,
+    "tokens": 40144
+  },
+  "clinical_note10": {
+    "strategy": "RAG",
+    "score": 0.5180625915527344,
+    "tokens": 65920
+  },
+  "clinical_note11": {
+    "strategy": "RAG",
+    "score": 0.6208130717277527,
+    "tokens": 65863
+  },
+  "clinical_note12": {
+    "strategy": "Wide",
+    "score": 0.5255087614059448,
+    "tokens": 65851
+  },
+  "clinical_note13": {
+    "strategy": "CLEAR",
+    "score": 0.4314959645271301,
+    "tokens": 51875
+  },
+  "clinical_note14": {
+    "strategy": "RAG",
+    "score": 0.5407125949859619,
+    "tokens": 65868
+  },
+  "clinical_note15": {
+    "strategy": "Wide",
+    "score": 0.5713367462158203,
+    "tokens": 10217
+  },
+  "clinical_note16": {
+    "strategy": "Wide",
+    "score": 0.530815839767456,
+    "tokens": 10068
+  }
+}

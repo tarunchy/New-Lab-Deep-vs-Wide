@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Comparison Summary</title>
+</head>
+<body>
+    <h1>📊 Performance by Note Size</h1>
+    <a href="{{ url_for('main.generate_model_summary_route') }}"><button>🔄 Recompute Summary</button></a>
+
+    <ul>
+    {% for bucket, stats in summary.items() %}
+        <li>
+            <h3>{{ bucket }} ({{ stats['#cases'] }} cases)</h3>
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th>Strategy</th>
+                    <th>Avg Score</th>
+                    <th>Wins</th>
+                </tr>
+                <tr>
+                    <td>Wide</td>
+                    <td>{{ "%.3f"|format(stats['avg_acc'][0]) }}</td>
+                    <td>{{ stats['wins'][0] }}</td>
+                </tr>
+                <tr>
+                    <td>RAG</td>
+                    <td>{{ "%.3f"|format(stats['avg_acc'][1]) }}</td>
+                    <td>{{ stats['wins'][1] }}</td>
+                </tr>
+                <tr>
+                    <td>CLEAR</td>
+                    <td>{{ "%.3f"|format(stats['avg_acc'][2]) }}</td>
+                    <td>{{ stats['wins'][2] }}</td>
+                </tr>
+                {% if stats.get('student_avg_acc') %}
+                <tr>
+                    <td><b>Student</b></td>
+                    <td colspan="2">{{ "%.3f"|format(stats['student_avg_acc']) }} ({{ stats['student_cases'] }} cases)</td>
+                </tr>
+                {% endif %}
+                {% if stats.get('student_avg_cosine') %}
+                <tr>
+                    <td><b>Student Cosine</b></td>
+                    <td colspan="2">{{ "%.3f"|format(stats['student_avg_cosine']) }} ({{ stats['student_cases'] }} cases)</td>
+                </tr>
+                {% endif %}
+                {% if stats.get('student_avg_rouge') %}
+                <tr>
+                    <td><b>Student ROUGE-L</b></td>
+                    <td colspan="2">{{ "%.3f"|format(stats['student_avg_rouge']) }} ({{ stats['student_cases'] }} cases)</td>
+                </tr>
+                {% endif %}
+            </table>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

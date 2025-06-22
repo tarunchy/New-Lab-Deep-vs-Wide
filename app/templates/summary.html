@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Summary</title></head>
+<body>
+    <h1>📊 Student vs Model Performance Summary</h1>
+    <a href="/static/aggregate_summary.json" download>Download aggregate_summary.json</a>
+    <ul>
+    {% for bucket, data in summary.items() %}
+        <li><strong>{{ bucket }}</strong> — {{ data['#cases'] }} cases
+            <ul>
+                <li>Avg Accuracies (Wide / RAG / CLEAR / Student): {{ data['avg_acc'] | join(" / ") }} / {{ data.get("student_avg_acc", "N/A") }}</li>
+                <li>Wins (Wide, RAG, CLEAR): {{ data['wins'] }}</li>
+            </ul>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

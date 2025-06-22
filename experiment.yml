@@ -1,0 +1,17 @@
+# experiment.yml  ← keep in repo root
+# ──────────────────────────────────────────────
+# OpenAI models to use
+openai_model_wide : gpt-4o
+openai_model_rag  : gpt-3.5-turbo
+openai_model_clear: gpt-3.5-turbo    # you can flip to gpt-4o later
+
+# context-window limits (tokens in GPT-4 tokenizer)
+shared_ctx_tokens : 3000   # BOTH RAG & CLEAR are trimmed to this
+wide_max_tokens   : 120000 # Wide is allowed up to this many
+
+# “it only counts as a win if …”
+win_margin        : 0.03   # cosine-sim delta
+
+# directories
+notes_root        : clinical_notes
+runs_root         : clinical_notes/runs

@@ -1,0 +1,922 @@
+Patient profile: male former smoker with COPD
+
+--- 1965 ---
+### Year: 1965
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing, especially with exertion. Denies chest pain or wheezing.
+
+### Objective / Vitals (≤80 words)
+Vitals: BP 140/90, HR 88, RR 24, SpO2 92% on room air. Lung exam reveals decreased breath sounds and diffuse wheezing.
+
+### Labs & Imaging (≤80 words)
+CXR shows hyperinflated lungs with flattened diaphragms. ABG reveals respiratory acidosis with pH 7.32, pCO2 55 mmHg, pO2 60 mmHg.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure. Likely triggered by infection or environmental exposure. Patient at risk for respiratory decompensation.
+
+### Plan (≤80 words)
+Initiate oxygen therapy to maintain SpO2 >90%. Nebulized bronchodilators and systemic corticosteroids for acute exacerbation. Monitor closely for signs of respiratory distress and consider ICU admission if condition worsens. Arrange follow-up with pulmonologist for optimization of COPD management.
+
+--- 1966 ---
+### Year: 1966
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with mild exertion. Denies chest pain, cough, or sputum production.
+
+### Objective / Vitals (≤80 words)
+Vitals: BP 145/95, HR 82, RR 22, O2 saturation 92% on room air. Breath sounds diminished with prolonged expiration. Clubbing of fingers noted.
+
+### Labs & Imaging (≤80 words)
+CXR shows hyperinflation and flattened diaphragms. ABG: pH 7.36, PaO2 60 mmHg, PaCO2 50 mmHg, HCO3 28 mEq/L. CBC and BMP within normal limits.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure. Hypertension. Clubbing suggests chronic hypoxia.
+
+### Plan (≤80 words)
+Initiate oxygen therapy. Nebulized bronchodilators and corticosteroids. Monitor ABGs. Start antihypertensive therapy. Consider pulmonary rehabilitation referral. Educate on smoking cessation. Follow-up in 1 week.
+
+--- 1967 ---
+### Year: 1967
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths/min. Decreased breath sounds and expiratory wheezing on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas reveals hypoxemia and hypercapnia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor respiratory status closely and consider non-invasive ventilation if needed. Arrange follow-up with pulmonologist.
+
+--- 1968 ---
+### Year: 1968
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion, productive cough with yellow sputum, and wheezing. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate 20, oxygen saturation 92% on room air. Diminished breath sounds bilaterally, prolonged expiratory phase. Accessory muscle use noted.
+
+### Labs & Imaging (≤80 words)
+CXR shows hyperinflated lungs with flattened diaphragms. ABG reveals respiratory acidosis with pH 7.30, pCO2 60 mmHg, pO2 60 mmHg.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure. Likely triggered by respiratory infection. History of smoking contributing to disease progression.
+
+### Plan (≤80 words)
+Initiate oxygen therapy to maintain saturation >90%. Nebulized bronchodilators and systemic corticosteroids for bronchodilation and inflammation control. Monitor ABG and adjust therapy accordingly. Consider antibiotics if evidence of infection. Educate on smoking cessation. Arrange follow-up with pulmonologist.
+
+--- 1969 ---
+### Year: 1969
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion and chronic cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and prolonged expiratory phase on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms consistent with COPD. Arterial blood gas reveals hypoxemia and hypercapnia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor oxygen saturation and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist for further management.
+
+--- 1970 ---
+### Year: 1970
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds on auscultation. Clubbing of fingers noted.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms. Arterial blood gas reveals hypoxemia and hypercapnia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor oxygen saturation and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist.
+
+--- 1971 ---
+### Year: 1971
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased dyspnea on exertion and productive cough. Denies chest pain or lower extremity edema.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate 20, oxygen saturation 92% on room air. Decreased breath sounds and expiratory wheezing on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+ECG shows left ventricular hypertrophy. No follow-up scheduled at this time.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with evidence of LV hypertrophy on ECG.
+
+### Plan (≤80 words)
+Initiate bronchodilators and corticosteroids for COPD exacerbation. Advise smoking cessation counseling. Follow-up in 2 weeks for reassessment.
+
+--- 1972 ---
+### Year: 1972
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated. Decreased breath sounds on auscultation. No signs of respiratory distress.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows bilateral hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas reveals hypoxemia and hypercapnia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor closely for signs of respiratory distress. Consider non-invasive ventilation if condition worsens. Arrange follow-up with pulmonologist.
+
+--- 1973 ---
+### Year: 1973
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing, especially with exertion. Denies chest pain or wheezing at rest.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and prolonged expiratory phase on lung auscultation. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms consistent with COPD. Arterial blood gas reveals mild hypoxemia with respiratory alkalosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure. History of smoking contributing to disease progression. No signs of respiratory infection.
+
+### Plan (≤80 words)
+Initiate oxygen therapy to maintain saturation above 90%. Nebulized bronchodilators and corticosteroids for symptom relief. Monitor for signs of respiratory distress and consider escalation of care if condition deteriorates. Arrange follow-up with pulmonologist for optimization of long-term management.
+
+--- 1974 ---
+### Year: 1974
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion. Denies chest pain or coughing up blood.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds on auscultation. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+Arterial blood gas shows mild hypoxemia. Chest X-ray reveals hyperinflation and flattened diaphragms consistent with COPD.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with mild hypoxemia.
+
+### Plan (≤80 words)
+Initiate bronchodilator therapy, oxygen supplementation, and corticosteroids. Monitor closely for respiratory status and consider pulmonary rehabilitation referral.
+
+--- 1975 ---
+### Year: 1975
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion, occasional cough with white sputum production. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22/min. Decreased breath sounds and expiratory wheezing on lung auscultation. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas reveals respiratory acidosis with pH 7.32, PaCO2 58 mmHg, PaO2 60 mmHg.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory acidosis. History of smoking contributing to disease progression. Risk of respiratory failure.
+
+### Plan (≤80 words)
+Initiate bronchodilators, corticosteroids, and oxygen therapy. Monitor respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Counsel on smoking cessation and pulmonary rehabilitation referral. Follow-up in 1 week for reassessment.
+
+--- 1976 ---
+### Year: 1976
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion. Denies chest pain or coughing up blood.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated. Diminished breath sounds on auscultation. Clubbing of fingers noted. 
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms. Arterial blood gas analysis reveals hypoxemia and hypercapnia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure. Chronic hypoxemia and hypercapnia. Clubbing suggestive of chronic hypoxia.
+
+### Plan (≤80 words)
+Initiate oxygen therapy. Nebulized bronchodilators and corticosteroids. Monitor oxygen saturation and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist.
+
+--- 1977 ---
+### Year: 1977
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough for the past week.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and mild wheezing on auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas reveals mild hypoxemia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute bronchitis. Mild hypoxemia noted on ABG.
+
+### Plan (≤80 words)
+Initiate bronchodilator therapy, oxygen supplementation, and corticosteroids. Encourage smoking cessation counseling and pulmonary rehabilitation. Follow up in 1 week for reassessment.
+
+--- 1978 ---
+### Year: 1978
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fevers.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and wheezing on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas reveals hypoxemia and respiratory acidosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor closely for signs of respiratory distress and consider possible need for non-invasive ventilation or intubation.
+
+--- 1979 ---
+### Year: 1979
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing, especially with exertion. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22/min. Decreased breath sounds bilaterally with expiratory wheezing. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+Echocardiogram shows ejection fraction of 45% with early systolic dysfunction. Chest X-ray reveals hyperinflated lungs with flattened diaphragms.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with evidence of chronic heart failure. Patient likely experiencing acute on chronic respiratory distress.
+
+### Plan (≤80 words)
+Initiate bronchodilators, corticosteroids, and supplemental oxygen therapy. Monitor closely for signs of respiratory failure. Consider cardiology consult for further management of heart failure. Arrange follow-up for pulmonary function testing.
+
+--- 1980 ---
+### Year: 1980
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vitals stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and expiratory wheezing on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest x-ray shows hyperinflated lungs with flattened diaphragms. Arterial blood gas reveals hypoxemia and hypercapnia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor oxygen saturation and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist.
+
+--- 1981 ---
+### Year: 1981
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing, especially with exertion. Denies chest pain or wheezing.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds on auscultation. Pulse oximetry shows oxygen saturation of 92% on room air.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray reveals hyperinflated lungs with flattened diaphragms consistent with COPD. Arterial blood gas shows mild hypoxemia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with mild hypoxemia. History of smoking contributing to lung damage.
+
+### Plan (≤80 words)
+Initiate bronchodilator therapy with albuterol nebulizer treatments. Supplemental oxygen at 2 L/min to maintain oxygen saturation above 90%. Monitor response to treatment and consider corticosteroid therapy if no improvement. Arrange follow-up in 1 week.
+
+--- 1982 ---
+### Year: 1982
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated. Diminished breath sounds on auscultation. No signs of respiratory distress.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas reveals mild hypoxemia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with mild hypoxemia. No signs of respiratory failure.
+
+### Plan (≤80 words)
+Initiate bronchodilators and corticosteroids. Oxygen therapy as needed. Monitor response to treatment and provide smoking cessation counseling. Follow-up in 1 week.
+
+--- 1983 ---
+### Year: 1983
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased dyspnea and productive cough over the past week, associated with yellow sputum production. Denies fevers or chest pain.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths/min. Decreased breath sounds and diffuse wheezing on lung auscultation. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows bilateral hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas reveals respiratory acidosis with pH 7.32, pCO2 55 mmHg, and pO2 60 mmHg.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory acidosis. Likely triggered by respiratory infection. History of smoking cessation noted.
+
+### Plan (≤80 words)
+Initiate bronchodilators and corticosteroids for acute exacerbation. Monitor oxygen saturation and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Encourage smoking cessation counseling. Follow-up spirometry in 4-6 weeks.
+
+--- 1984 ---
+### Year: 1984
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath at rest and with minimal exertion. Denies chest pain or palpitations.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate 22, oxygen saturation 88% on room air. Diminished breath sounds bilaterally. Increased anterior-posterior diameter of the chest.
+
+### Labs & Imaging (≤80 words)
+Admitted congestive heart failure, severe LV dysfunction noted on echocardiogram. Elevated BNP levels. Chest X-ray shows bilateral pulmonary congestion.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute decompensated heart failure. Severe LV dysfunction contributing to respiratory distress.
+
+### Plan (≤80 words)
+Initiate BiPAP for respiratory support. Diuresis with furosemide. Nebulized bronchodilators for COPD exacerbation. Cardiology consult for further management of heart failure.
+
+--- 1985 ---
+### Year: 1985
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and expiratory wheezing on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms consistent with COPD. Arterial blood gas reveals hypoxemia with respiratory acidosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor response to treatment and consider need for non-invasive ventilation. Arrange follow-up with pulmonologist.
+
+--- 1986 ---
+### Year: 1986
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fevers.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and coarse crackles on auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows bilateral infiltrates consistent with acute exacerbation of COPD. Arterial blood gas reveals hypoxemia.
+
+### Assessment (≤80 words)
+Acute exacerbation of COPD with respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, corticosteroids, and antibiotics. Monitor respiratory status closely. Consider non-invasive ventilation if condition worsens. Arrange follow-up with pulmonologist.
+
+--- 1987 ---
+### Year: 1987
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing, especially with exertion. Denies chest pain or wheezing at rest.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 20 breaths per minute. Decreased breath sounds and expiratory wheezing on lung auscultation. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms consistent with COPD. Arterial blood gas reveals mild hypoxemia with respiratory alkalosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with mild hypoxemia and respiratory alkalosis.
+
+### Plan (≤80 words)
+Initiate bronchodilators and corticosteroids. Monitor oxygen saturation and respiratory status closely. Educate patient on smoking cessation and pulmonary rehabilitation program. Follow-up in 1 week.
+
+--- 1988 ---
+### Year: 1988
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing, especially in the mornings. Denies chest pain or fevers.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 20/min. Decreased breath sounds and expiratory wheezing on lung auscultation. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+Pulmonary function tests show severe airflow limitation consistent with COPD. Chest X-ray reveals hyperinflation and flattened diaphragms.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute bronchitis. Severe airflow limitation on PFTs. History of smoking contributing to current respiratory symptoms.
+
+### Plan (≤80 words)
+Initiate bronchodilators and corticosteroids for acute exacerbation. Oxygen therapy as needed. Smoking cessation counseling. Follow-up spirometry in 4 weeks.
+
+--- 1989 ---
+### Year: 1989
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough for the past week. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22/min. Decreased breath sounds and expiratory wheezes on lung auscultation. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+CXR shows bilateral hyperinflation and flattened diaphragms consistent with COPD. ABG reveals respiratory acidosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, corticosteroids, and antibiotics. Monitor closely for signs of respiratory distress and consider ICU transfer if condition worsens. Arrange follow-up with pulmonologist.
+
+--- 1990 ---
+### Year: 1990
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing, especially with exertion. Denies chest pain or wheezing at rest.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated. Decreased breath sounds on auscultation. Clubbing of fingers noted. 
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms. Arterial blood gas reveals hypoxemia and hypercapnia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure. Chronic hypoxemia and hypercapnia.
+
+### Plan (≤80 words)
+Initiate oxygen therapy. Nebulized bronchodilators and corticosteroids. Monitor oxygen saturation and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist.
+
+--- 1991 ---
+### Year: 1991
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated. Decreased breath sounds on auscultation. No signs of respiratory distress.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows bilateral hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas reveals hypoxemia and hypercapnia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor oxygen saturation and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist.
+
+--- 1992 ---
+### Year: 1992
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Lung auscultation reveals bilateral wheezing.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms. Arterial blood gas shows hypoxemia with respiratory alkalosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor closely for respiratory status and consider possible need for non-invasive ventilation.
+
+--- 1993 ---
+### Year: 1993
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing, especially with exertion. Denies chest pain or wheezing.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 20 breaths per minute. Decreased breath sounds on auscultation. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms consistent with COPD. Arterial blood gas shows mild hypoxemia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with mild hypoxemia. History of smoking contributing to current respiratory symptoms.
+
+### Plan (≤80 words)
+Initiate bronchodilator therapy, oxygen supplementation as needed, and corticosteroids for exacerbation. Provide smoking cessation counseling and follow-up spirometry in 6 weeks.
+
+--- 1994 ---
+### Year: 1994
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing, especially with exertion. Denies chest pain or wheezing.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds bilaterally with prolonged expiratory phase. Clubbing present.
+
+### Labs & Imaging (≤80 words)
+Pulmonary function tests show severe airflow limitation consistent with COPD. Chest X-ray reveals hyperinflation and flattened diaphragms.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory distress. Chronic hypoxemia and hypercapnia. History of smoking contributing to disease progression.
+
+### Plan (≤80 words)
+Initiate oxygen therapy. Nebulized bronchodilators and corticosteroids for symptom relief. Monitor oxygen saturation and respiratory status closely. Educate on smoking cessation and pulmonary rehabilitation program. Follow-up in 2 weeks for reassessment.
+
+--- 1995 ---
+### Year: 1995
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and coughing, especially with exertion. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and expiratory wheezing on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+Pulmonary function tests show obstructive pattern consistent with COPD. Chest X-ray reveals hyperinflation and flattened diaphragms.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute bronchitis. History of smoking contributing to lung damage.
+
+### Plan (≤80 words)
+Initiate bronchodilators and corticosteroids for acute exacerbation. Oxygen therapy as needed. Smoking cessation counseling and referral to pulmonary rehabilitation program. Follow-up spirometry in 4 weeks.
+
+--- 1996 ---
+### Year: 1996
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with exertion and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and expiratory wheezing on auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas shows hypoxemia and hypercapnia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor closely for respiratory status and consider need for non-invasive ventilation. Arrange follow-up with pulmonologist.
+
+--- 1997 ---
+### Year: 1997
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and coarse crackles on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows bilateral hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas reveals hypoxemia and respiratory acidosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, corticosteroids, and antibiotics. Monitor oxygen saturation and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist.
+
+--- 1998 ---
+### Year: 1998
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and coarse crackles on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows bilateral diffuse infiltrates. Arterial blood gas reveals hypoxemia and hypercapnia.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, corticosteroids, and antibiotics. Monitor closely for respiratory status and consider ICU admission if condition worsens. Arrange for pulmonary function testing upon discharge.
+
+--- 1999 ---
+### Year: 1999
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion. Denies chest pain or coughing up blood.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds on auscultation. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas shows respiratory acidosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy. Administer bronchodilators and corticosteroids. Monitor respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist.
+
+--- 2000 ---
+### Year: 2000
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion, productive cough with yellow sputum, and fatigue.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22/min. Decreased breath sounds bilaterally, scattered wheezes on auscultation. SpO2 92% on room air.
+
+### Labs & Imaging (≤80 words)
+CBC within normal limits. Chest X-ray shows hyperinflated lungs with flattened diaphragms consistent with COPD.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute bronchitis. Moderate hypoxemia. No signs of respiratory failure.
+
+### Plan (≤80 words)
+Initiate short-acting bronchodilators, oral corticosteroids, and supplemental oxygen therapy. Encourage smoking cessation counseling. Follow-up in 2 weeks for reassessment.
+
+--- 2001 ---
+### Year: 2001
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion. Denies chest pain or wheezing. Compliance with inhalers is suboptimal.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22/min. Lung auscultation reveals diffuse expiratory wheezes. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+CXR shows hyperinflated lungs with flattened diaphragms consistent with COPD. ABG reveals respiratory acidosis with pH 7.32, pCO2 55 mmHg, pO2 60 mmHg.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory acidosis. History of suboptimal inhaler compliance contributing to symptoms.
+
+### Plan (≤80 words)
+Initiate nebulized bronchodilators and systemic corticosteroids. Optimize inhaler technique and provide smoking cessation counseling. Monitor ABGs and respiratory status closely. Consider pulmonary rehabilitation referral.
+
+--- 2002 ---
+### Year: 2002
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fevers.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and scattered wheezes on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflation and flattened diaphragms consistent with COPD. Arterial blood gas reveals hypoxemia and respiratory acidosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, corticosteroids, and antibiotics. Monitor oxygen saturation and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist.
+
+--- 2003 ---
+### Year: 2003
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with exertion, productive cough with yellow sputum, and decreased exercise tolerance.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable with oxygen saturation of 92% on room air. Increased respiratory rate noted. Lung auscultation reveals bilateral expiratory wheezes.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms. Arterial blood gas demonstrates respiratory acidosis with elevated pCO2.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure. History of tobacco use contributing to disease progression.
+
+### Plan (≤80 words)
+Initiate bronchodilators, corticosteroids, and oxygen therapy. Monitor respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up spirometry and smoking cessation counseling.
+
+--- 2004 ---
+### Year: 2004
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion. Denies chest pain or coughing up blood.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and prolonged expiratory phase on auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms consistent with COPD. Arterial blood gas reveals hypoxemia with respiratory acidosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, corticosteroids, and antibiotics as needed. Monitor oxygen saturation and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist for long-term management.
+
+--- 2005 ---
+### Year: 2005
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath with minimal exertion and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22/min. Decreased breath sounds and prolonged expiratory phase on auscultation. Oxygen saturation 92% on room air.
+
+### Labs & Imaging (≤80 words)
+CBC within normal limits. Chest X-ray shows hyperinflation and flattened diaphragms consistent with COPD.
+
+### Assessment (≤80 words)
+Exacerbation of COPD. Moderate respiratory distress.
+
+### Plan (≤80 words)
+Initiate nebulized bronchodilators and corticosteroids. Monitor oxygen saturation and respiratory status closely. Consider chest physiotherapy. Arrange follow-up with pulmonologist.
+
+--- 2006 ---
+### Year: 2006
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased dyspnea on exertion and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated. Decreased breath sounds and wheezing on auscultation. Clubbing of fingers noted.
+
+### Labs & Imaging (≤80 words)
+Pulmonary function tests show severe airflow limitation consistent with COPD exacerbation. Chest X-ray reveals hyperinflation and flattened diaphragms.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory distress. Possible secondary infection.
+
+### Plan (≤80 words)
+Initiate bronchodilators and corticosteroids. Supplemental oxygen therapy. Monitor closely for respiratory status. Consider antibiotics if signs of infection worsen. Arrange follow-up spirometry.
+
+--- 2007 ---
+### Year: 2007
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased shortness of breath and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths per minute. Decreased breath sounds and expiratory wheezing noted on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+Chest X-ray shows hyperinflated lungs with flattened diaphragms. Arterial blood gas reveals hypoxemia and respiratory acidosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure. History of smoking contributing to disease progression.
+
+### Plan (≤80 words)
+Initiate oxygen therapy, bronchodilators, and corticosteroids. Monitor respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up for pulmonary function testing. Educate on smoking cessation.
+
+--- 2008 ---
+### Year: 2008
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased dyspnea on exertion and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22 breaths/min. Decreased breath sounds bilaterally, with wheezing on expiration.
+
+### Labs & Imaging (≤80 words)
+CBC within normal limits. Chest X-ray shows hyperinflation and flattened diaphragms consistent with COPD.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute bronchitis. No signs of pneumonia.
+
+### Plan (≤80 words)
+Initiate bronchodilators, oral corticosteroids, and oxygen therapy. Encourage smoking cessation counseling. Follow-up spirometry in 2 weeks.
+
+--- 2009 ---
+### Year: 2009
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased dyspnea on exertion and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate 22, oxygen saturation 92% on room air. Diminished breath sounds bilaterally with expiratory wheezing.
+
+### Labs & Imaging (≤80 words)
+CXR shows hyperinflated lungs with flattened diaphragms consistent with COPD. ABG reveals respiratory acidosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with acute respiratory failure.
+
+### Plan (≤80 words)
+Initiate bronchodilators, corticosteroids, and oxygen therapy. Monitor ABG and respiratory status closely. Consider non-invasive ventilation if respiratory distress worsens. Arrange follow-up with pulmonologist.
+
+--- 2010 ---
+### Year: 2010
+### Patient profile
+male former smoker with COPD
+
+### Subjective (≤60 words)
+Patient reports increased dyspnea on exertion and productive cough. Denies chest pain or fever.
+
+### Objective / Vitals (≤80 words)
+Vital signs stable. Respiratory rate slightly elevated at 22/min. Decreased breath sounds and expiratory wheezing on lung auscultation.
+
+### Labs & Imaging (≤80 words)
+CXR shows hyperinflated lungs with flattened diaphragms consistent with COPD. ABG reveals respiratory acidosis.
+
+### Assessment (≤80 words)
+Exacerbation of COPD with respiratory acidosis. Rule out pneumonia.
+
+### Plan (≤80 words)
+Initiate bronchodilators, corticosteroids, and oxygen therapy. Monitor ABG levels and respiratory status closely. Consider chest physiotherapy. Arrange follow-up spirometry and smoking cessation counseling.
+
